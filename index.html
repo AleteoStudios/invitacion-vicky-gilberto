@@ -306,20 +306,42 @@
       100% { transform: translateX(140%) rotate(8deg); }
     }
 
-    @media (max-width: 480px) {
-      body {
-        padding: 12px;
-      }
-      .card-inner {
-        padding: 18px 16px 20px;
-      }
-      .title {
-        font-size: 2rem;
-      }
-      .subtitle {
-        font-size: 1rem;
-      }
-    }
+   @media (max-width: 480px) {
+  body {
+    padding: 10px 8px 24px;
+    align-items: flex-start;      /* 💡 ya no centra vertical, ahora inicia arriba */
+  }
+
+  .card {
+    margin-top: 10px;            /* Un poco de aire arriba */
+  }
+
+  .card-inner {
+    padding: 18px 14px 20px;     /* Menos padding para que quepa más contenido */
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .intro {
+    font-size: 0.85rem;
+  }
+
+  .event-line {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+}
+
   </style>
 </head>
 
@@ -361,7 +383,7 @@
         </div>
         <div class="event-line">
           <span class="icon">📍</span>
-          <span>Capilla de San Martín de Porres</span>
+          <span>Capilla de San Martín de Porres, Tulancingo, Hgo.</span>
         </div>
 
         <a
@@ -473,6 +495,7 @@
   </script>
 </body>
 </html>
+
 
 
 
